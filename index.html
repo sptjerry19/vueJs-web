@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://web-dev.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/KAOmqplghJT2PrJlOgZ5.png?auto=format"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/24f3a1f6e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="vue.css" />
+    <title>Vue JS</title>
+  </head>
+  <!-- tuong about + features -->
+
+  <!-- tuấn anh client -->
+
+  <!-- trường plan + contact -->
+
+  <body>
+    <!-- linh home -->
+
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="" class="navbar-brand-logo">
+          <img
+            src="https://themesdesign.in/peyso/layout/images/logo-dark.png"
+            alt="logo"
+          />
+        </a>
+        <div class="navbar-items">
+          <div class="navbar-items__item">
+            <a href="#home" onclick="makeActive(this)" class="nav-item active"
+              >Home</a
+            >
+            <a onclick="makeActive(this)" class="nav-item">About</a>
+            <a onclick="makeActive(this)" class="nav-item">Features</a>
+            <a onclick="makeActive(this)" class="nav-item">Clients</a>
+            <a onclick="makeActive(this)" class="nav-item">Plans</a>
+            <a onclick="makeActive(this)" class="nav-item">Contact</a>
+          </div>
+          <div class="navbar-items__signin">
+            <button class="navbar-items__signin__button">Try it Free</button>
+          </div>
+        </div>
+        <div class="navbar-items__list-items">
+          <i class="fa-solid fa-list"></i>
+        </div>
+      </div>
+    </nav>
+    <div id="home">
+      <section class="slider-home">
+        <div class="slider-home__backgound">
+          <img
+            src="https://themesdesign.in/peyso/layout/images/hero-2-overlay.png"
+            alt="background"
+          />
+          <div class="slider-container">
+            <div class="slider-container__image">
+              <img
+                src="https://themesdesign.in/peyso/layout/images/hero-2-img.png"
+                alt="image"
+              />
+            </div>
+            <div class="slider-container__infor">
+              <h5>GROW MORE</h5>
+              <h1>Powering Business Everywhere</h1>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium upto doloremque amet dolor sit amet.
+              </p>
+              <button>
+                <a href="">Learn more -></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- test  -->
+    <!-- <div class="test" style="height: 10000px"></div> -->
+
+    <div id="products"></div>
+  </body>
+  <script src="main.js"></script>
+  <script>
+    makeActive = function (e) {
+      console.log(e);
+      var item_active = document.querySelector(".nav-item.active");
+      item_active.classList.remove("active");
+      e.classList.add("active");
+    };
+  </script>
+</html>
